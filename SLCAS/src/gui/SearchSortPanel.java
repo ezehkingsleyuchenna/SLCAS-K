@@ -1,12 +1,11 @@
 package gui;
 
 import controller.LibraryManager;
-import model.LibraryItem;
-
-import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.util.ArrayList;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import model.LibraryItem;
 
 /**
  * Tab 4 – Search & Sort.
@@ -66,6 +65,10 @@ public class SearchSortPanel extends JPanel {
         searchBtn.setToolTipText("Run the search (Alt+S)");
         searchBtn.setBackground(new Color(50, 100, 200));
         searchBtn.setForeground(Color.WHITE);
+        searchBtn.setOpaque(true);
+        searchBtn.setContentAreaFilled(true);
+        searchBtn.setFocusPainted(false);
+        searchBtn.setBorderPainted(false);
 
         gc.gridx = 0; gc.gridy = 0; gc.weightx = 0; searchPanel.add(new JLabel("Query:"),     gc);
         gc.gridx = 1;               gc.weightx = 1; searchPanel.add(searchField,               gc);
@@ -99,6 +102,10 @@ public class SearchSortPanel extends JPanel {
         sortBtn.setToolTipText("Sort the entire catalogue and display below (Alt+O)");
         sortBtn.setBackground(new Color(120, 60, 160));
         sortBtn.setForeground(Color.WHITE);
+        sortBtn.setOpaque(true);
+        sortBtn.setContentAreaFilled(true);
+        sortBtn.setFocusPainted(false);
+        sortBtn.setBorderPainted(false);
 
         sortPanel.add(new JLabel("Sort by:"));
         sortPanel.add(sortFieldCombo);

@@ -1,7 +1,0 @@
-[
-  {"userId":"USR-26-1016","name":"Alice Johnson","email":"alice.johnson@university.edu","phone":"08012345678","borrowedItems":["ITEM-26-1000","ITEM-26-1002"],"overdueItems":[]},
-  {"userId":"USR-26-1017","name":"Bob Okafor","email":"bob.okafor@university.edu","phone":"08023456789","borrowedItems":["ITEM-26-1001"],"overdueItems":[]},
-  {"userId":"USR-26-1018","name":"Chioma Eze","email":"chioma.eze@university.edu","phone":"08034567890","borrowedItems":[],"overdueItems":[]},
-  {"userId":"USR-26-1019","name":"David Smith","email":"david.smith@university.edu","phone":"08045678901","borrowedItems":[],"overdueItems":[]},
-  {"userId":"USR-26-1020","name":"Emeka Nwosu","email":"emeka.nwosu@university.edu","phone":"08056789012","borrowedItems":[],"overdueItems":[]}
-]

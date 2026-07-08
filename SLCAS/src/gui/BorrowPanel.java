@@ -1,14 +1,12 @@
 package gui;
 
 import controller.LibraryManager;
-import model.LibraryItem;
-import model.UserAccount;
-
-import javax.swing.*;
-import javax.swing.border.TitledBorder;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.util.ArrayList;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import model.LibraryItem;
+import model.UserAccount;
 
 /**
  * Tab 2 – Borrow / Return.
@@ -100,12 +98,16 @@ public class BorrowPanel extends JPanel {
         borrowBtn.setBackground(new Color(70, 160, 70));
         borrowBtn.setForeground(Color.WHITE);
         borrowBtn.setToolTipText("Borrow the specified item for the user (Alt+B)");
+        borrowBtn.setOpaque(true);
+        borrowBtn.setBorderPainted(false);
 
         returnBtn = new JButton("Return");
         returnBtn.setMnemonic('T');
         returnBtn.setBackground(new Color(210, 90, 40));
         returnBtn.setForeground(Color.WHITE);
         returnBtn.setToolTipText("Return the specified item from the user (Alt+T)");
+        returnBtn.setOpaque(true);
+        returnBtn.setBorderPainted(false);
 
         JPanel btnPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 12, 0));
         btnPanel.add(borrowBtn);

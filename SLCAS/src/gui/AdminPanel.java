@@ -1,14 +1,11 @@
 package gui;
 
 import controller.LibraryManager;
-import model.*;
-import utils.IDGenerator;
-
-import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.io.File;
-import java.util.ArrayList;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import model.*;
 
 /**
  * Tab 3 – Admin Panel.
@@ -146,6 +143,8 @@ public class AdminPanel extends JPanel {
         addItemBtn.setForeground(Color.WHITE);
         addItemBtn.setToolTipText("Add the new item to the catalogue (Alt+A)");
         addItemBtn.addActionListener(e -> handleAddItem());
+        addItemBtn.setOpaque(true);
+        addItemBtn.setBorderPainted(false);
 
         JPanel addBtnRow = new JPanel(new FlowLayout(FlowLayout.RIGHT, 8, 4));
         addBtnRow.add(addItemBtn);
@@ -219,6 +218,8 @@ public class AdminPanel extends JPanel {
         addUserBtn.setForeground(Color.WHITE);
         addUserBtn.setToolTipText("Create a new user account");
         addUserBtn.addActionListener(e -> handleAddUser());
+        addUserBtn.setOpaque(true);
+        addUserBtn.setBorderPainted(false);
 
         gc.gridx = 0; gc.gridy = 3; gc.gridwidth = 2;
         gc.anchor = GridBagConstraints.EAST;
@@ -328,8 +329,12 @@ public class AdminPanel extends JPanel {
 
         saveBtn.setBackground(new Color(50, 130, 60));
         saveBtn.setForeground(Color.WHITE);
+        saveBtn.setOpaque(true);
+        saveBtn.setBorderPainted(false);
         loadBtn.setBackground(new Color(80, 100, 180));
         loadBtn.setForeground(Color.WHITE);
+        loadBtn.setOpaque(true);
+        loadBtn.setBorderPainted(false);
 
         saveBtn.addActionListener(e -> {
             manager.saveData("data");
