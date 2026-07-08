@@ -1,0 +1,21 @@
+# Java build output
+*.class
+SLCAS/bin/
+
+# Temporary build input file
+SLCAS/sources.txt
+
+# Logs
+*.log
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Java tooling
+*.jar
+*.war
+*.ear
+hs_err_pid*
